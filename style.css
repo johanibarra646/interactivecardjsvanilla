@@ -1,0 +1,80 @@
+@import url(./cards.css);
+@import url(./form.css);
+
+html {
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    Font-size: 18px;
+}
+
+/* .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./images/bg-main-desktop.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    block-size: 82vh;
+    background-size: auto;
+    inline-size: 1280px;
+    margin: 50px;
+    gap:50px;
+    box-shadow: 0px 0px 27px 5px rgba(0,0,0,0.1);
+
+} */
+
+.container {
+  display: grid;
+  background-image: url(./images/bg-main-desktop.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  block-size: 43vh;
+  background-size: auto;
+  inline-size: 100%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 27px 5px rgb(0 0 0 / 10%);
+}
+
+.wrapp {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 100vh;
+  max-inline-size: 1120px;
+}
+
+
+@media screen and (min-width: 800px){
+.container {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url(./images/bg-main-desktop.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  block-size: 82vh;
+  background-size: auto;
+  inline-size: 1000px;
+  margin: 0 auto;
+  gap: 50px;
+  box-shadow: 0px 0px 27px 5px rgb(0 0 0 / 10%);
+}
+
+.wrapp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 100vh;
+  max-inline-size: 1120px;
+}
+}

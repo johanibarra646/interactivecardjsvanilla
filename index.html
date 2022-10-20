@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+    <div class="wrapp">
+        <main class="container">
+            <div class="images-cards">
+                <div class="front-page-container">
+                    <img class="front-image" src="./images/bg-card-front.png" alt="">
+                </div>
+                <div class="information-cards">
+                    <img class="logo-card" src="./images/card-logo.svg" alt=""> 
+                    <p class="number-cards">0000 0000 0000 0000</p>
+                    <div class="footer-cards">    
+                        <p class="namefootcard">Jane Applessed</p>
+                        <p class="expfootcard"> <span class="mm_number">00</span>/<span class="yy_number">00</span> </p>
+                    </div>
+                </div>
+                <div class="back-card-container">
+                    <img class="back-image"src="./images/bg-card-back.png" alt="">
+                <div class="footer-cards">    
+                    <p class="numberBack-cards">000</p>
+                </div>
+                 </div>
+            
+            </div>
+            <div class="form-cards-validation">
+                <form class="form-cards" id="form-main">
+                    <div class="first-field-form">
+                    <label for="name">Cardholder name</label>
+                    <input type="text" name="name" id="full_name" placeholder="e.g. Jane Appleseed" required>
+                     </div>
+                     <div class="second-field-form">
+                    <label for="card">Card number</label>
+                    <input type="number" name="card" id="card" required min="0" max="9999999999999999" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="e.g. 1234 5678 9123 0000">
+                    </div>
+                    <div class="expiration">
+                        <div class="date-expiration">
+                        <label for="date">Exp- date (MM/YY)</label>
+                        <div class="field-expiration">
+                        <input type="number" name="mm" required max="99" id="mouthCard" placeholder="MM">
+                        <input type="number" name="yy" required max="99" id="yearCard" placeholder="YY">
+                          </div>
+                        </div>
+                        <div class="cvc-expiration">
+                        <label for="cvc">cvc</label>
+                        <input type="number" required name="cvc" max="999" id="cvc" placeholder="e.g. 123">
+                         </div>
+                    </div>
+                    <input class="confirm" type="submit" value="Confirm"> </input>
+                </form>
+                
+            </div>
+        </main>
+    </div>
+    <p class="example"></p>
+
+    <script src="app.js"></script>
+</body>
+</html>
